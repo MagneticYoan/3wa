@@ -1,0 +1,107 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+    font-family: "awesome";
+    src: url(/fonts/font-awesome/fontawesome-webfont.woff) format("woff");
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+
+body {
+    background-image:url(../img/fond.png);
+    padding : 0px 60px 0px 0px;
+}
+
+h2 {
+    font-family : "Oswald", sans-serif;
+    color: #b8cb21;
+
+}
+
+main {
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+
+}
+
+main, header {
+    max-width : 750px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+nav {
+    background-color :#b8cb21;
+    font-family : "Oswald", sans-serif;
+    font-size:1.3em ;
+}
+
+#navi {
+    vertical-align: middle;
+    float:right;
+    text-decoration : underline ;
+    list-style-type: none;
+    padding : 20px 20px 20px 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 75%;
+}
+
+#navi a {
+    color: #4a660d;
+    padding: 15px;
+}
+
+#spacer {
+    clear:both;
+} 
+
+header img {
+    float : left; 
+}
+
+section {
+    overflow: auto;
+}
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+section img {
+    float:left;
+    max-width : 25%;
+    margin-right: 5px;
+    margin-top : 5px;
+}
+
+.readmore a {
+    color: white;
+    background-color: #b8cb21;
+    display:block;
+    padding: 5px 5px;
+    max-width:90px;
+    float:right;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    font-size:90%;
+    max-width : 125%;
+    color: grey;
+}
+
+footer a {
+    text-decoration : underline ;
+}
+
+footer img {
+    float: none;
+    width:3%;
+}
+
