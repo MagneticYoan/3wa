@@ -1,0 +1,180 @@
+/* FONT FACE */
+@font-face {
+    font-family: "Slabo";
+    src: url(../font/Slabo27px-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../font/OpenSans-Light.ttf');
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+body {
+    font-size : 1em;
+    font-family : 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-image : url('../img/fond.png');
+}
+
+main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: grey;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: "Slabo", serif;
+    font-weight: lighter
+}
+
+h3 {
+    font-size : 3.5em;
+    font-family: "Slabo", serif;
+    font-weight: lighter;
+    text-align: center;
+    margin : -5px;
+    margin-bottom : -40px;
+}
+
+h4 {
+    font-size: 1.8em;
+    font-family: "Slabo", serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h5 {
+    font-size : 1.4em;
+    font-family: "Slabo 27px", serif;
+    font-weight: lighter;
+}
+
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header img {
+    width : 18%;
+    max-width: 250px;
+    min-width: 100px;
+}
+header {
+    margin-top : 50px; 
+    text-align: center;
+    padding : 20px;
+    background-color: #34b1b2;
+    color: white;
+    max-width: 100%;
+    border-style : solid;
+    border-width: 4px;
+    border-color : #2b9aa0;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    font-family: "Slabo";
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+#welcome {
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+#today {
+    float : left;
+    width : 68%;
+    padding : 20px;
+    background-color : #b6dedc;
+    text-align: justify;
+    
+}
+
+#bluetoday {
+    color: #34b1b2;
+}
+
+section img {
+    float: left;
+}
+
+#crusty {
+    max-width: 50%;;
+    float: left;
+    margin: auto;
+    padding: 20px;
+}
+
+#crusty img, #multi img {
+    border-radius : 50%;
+    width : 40%;
+}
+
+#multi {
+    max-width: 50%;
+    margin: auto;
+    float: right;
+    padding: 20px;
+}
+
+
+
+section article a {
+    color : white;
+    background-color: #2b9aa0;
+    padding : 5px;
+    float : right;
+}
+
+aside {
+    float: left;
+    margin-left: 20px;
+    width : 29%;
+    padding-right : 20px;
+    padding-left: 20px;
+    text-align : justify;
+    background-color: #34b1b2;
+    color: white;
+    border-style : solid;
+    border-width: 4px;
+    border-color : #2b9aa0;
+}
+
+aside img {
+    float : right;
+    margin-right: -70px;
+    margin-top: -40px;
+}
+
+aside article a {
+    margin-bottom: -10px;
+    color: #b6dedc;
+}
+
+#bluenews {
+    color: #b6dedc;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    text-align: center;
+    font-size:90%;
+    max-width : 125%;
+    color: grey;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}
+/* Ce qui concerne le footer */

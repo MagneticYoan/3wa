@@ -1,0 +1,217 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@font-face {
+    font-family:"KaushanScript";
+    src: url("../fonts/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf")
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+* {
+    box-sizing: border-box;
+}
+body {
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Playfair";
+    color: grey;
+    font-size: 1em;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header {
+    background-image: url("../img/fond.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+nav {
+    background-color: RGBA(220, 203, 238, 0.9);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "KaushanScript";
+}
+
+nav p {
+    margin : 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+#promo {
+    text-align: center;
+    background-color : rgba(220, 203, 238, .5);
+    color: white;
+    margin:0px;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: "KaushanScript";
+    text-shadow: grey 0.1em 0.1em 0.1em;
+    font-weight: lighter;
+    padding-bottom: 20%;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+h2 {
+    text-align: center;
+    color: grey;
+}
+
+#section1 {
+    padding: 20px;
+    clear:both;
+}
+
+
+
+#presentation img {
+    float: left;
+    width: 10%;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+#presentadeux img {
+   float : right;
+   width: 10%;
+   margin-left: 20px;
+   padding-bottom: 20px;
+}
+
+
+#pratique {
+    margin-left : auto;
+    margin-right : auto;
+    background-image: url("../img/background_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding : 10px;
+    clear:both;
+}
+
+#pratique article {
+    width : 20%;
+    display : inline-block;
+    text-align : center;
+    margin-left : 5%;
+    margin-right : 5%;
+    padding: 15px;
+    clear:both;
+    
+}
+
+#pratique img {
+    width: 50%;
+}
+
+hr {
+    color: rgba(192, 192, 192, 0.5);
+    width: 90%;
+    clear: both;
+    
+}
+
+#spacer {
+    clear:both;
+}
+
+iframe {
+    width : 100%;
+}
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 65%;
+    max-width : 125%;
+    color: white;
+    background-color: #8d6fd1;
+    margin-top: 2px;
+    padding : 5px 15% 5px 15%;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}
+
+/* Page Agenda */
+
+#tabhead {
+    padding: 0 10px 0;
+    margin-left : 10px;
+    margin-bottom: 30px;
+}
+
+
+
+.chiffre {
+    font-weight: bold;
+    color : black;
+}
+
+.duree {
+    color : white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    color: black;
+    border-collapse: separate;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    border : 6px solid rgba(210, 174, 248, 0.5);
+    
+    
+}
+
+tbody {
+    background-image : url("../img/background_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pacific {
+    text-align: right;
+}
+
+
+
+
+tbody td {
+    empty-cells: hide;
+    padding: 5px;
+    border-spacing: 5px;
+    border : 3px solide rgba(203, 203, 203, 1);
+}
+

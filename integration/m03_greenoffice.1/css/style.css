@@ -14,6 +14,7 @@
 body {
     background-image:url(../img/fond.png);
     padding : 0px 60px 0px 0px;
+    font-size: 1em;
 }
 
 h2 {

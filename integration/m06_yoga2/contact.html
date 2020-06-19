@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ila Yoga</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src=“https://kit.fontawesome.com/e117b4e3e1.js” crossorigin=“anonymous”></script>
+		<!-- CSS Vendor -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<!-- CSS Perso -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	</head>
+	<body>
+		<!--HEADER-->
+		<header>
+			<nav>
+				<a href="index.html"><p><i class="fa fa-home"></i><br> Home</p></a>
+				<a href="agenda.html"><p><i class="fa fa-calendar"></i><br>Agenda</p></a>
+				<a href="livreor.html"><p><i class="fa fa-book"></i><br>Livre d'Or</p></a>
+				<a href="photo.html"><p><i class="fa fa-image"></i><br>Album Photo</p></a>
+				<a href="contact.html"><p><i class="fa fa-envelope"></i><br>Nous Contacter</p></a>
+			</nav>
+			<!-- bandeau -->
+			<p id="promo">OFFRE PROMO: Votre premier cours d'essai gratuit!</p>
+			<h1>Bienvenue sur le site d'Ila Yoga</h1>
+		</header>
+		<!--MAIN CONTENT-->
+		<main>
+			<h2>Formulaire de contact</h2>
+			<section id="contact">
+				<form action="/ma-page-de-contact" method="post">
+					<fieldset>
+						<legend>Vos Coordonnées</legend>
+						<label>Votre Prénom</label>
+						<input type="text" id="fname" name="user_fname">
+						<label>Votre Nom</label>
+						<input type="text" id="name" name="user_name">
+						<label for="mail">Votre mail</label>
+						<input type="email" id="mail" name="user_mail">
+					</fieldset>
+					<fieldset>
+					    <legend>Votre Message</legend>
+					    <label>Sujet</label>
+					    <input type="text">
+					    <br>
+					    <label>Message</label>   
+			            <textarea id="subject" name="subject" placeholder="Ecrivez votre message ici ..." style="height:200px"></textarea>
+					</fieldset>
+					<br><input type="submit" value="Envoyer" id="envoi">
+				</form>
+			</section>
+			<aside id="contactaside">
+				<h2>Suivez-nous</h2>
+				<p><a href="#"><i class="fa fa-facebook"></i></a></p>
+				<p><a href="#"><i class="fa fa-twitter"></i></a></p>
+				<p><a href="#"><i class="fa fa-instagram"></i></a></p>
+			</aside>
+		</main>
+		<!--FOOTER-->
+		<footer>
+			<img src='./img/3wa.jpg' alt="logo 3WA"/>
+         	<p>Cet exercice de la <a href=https://3wa.fr/>3W Academy </a>est mis à disposition pour l'usage personnel des étudiants. 
+         	<a href="https://3wa.fr/propriete-materiel-pedagogique/">Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International.</a>
+        	<br>Les autorisations au-dela du champ de cette license peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. 
+        	Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Miller</a>.</p>
+		</footer>
+	</body>
+</html>

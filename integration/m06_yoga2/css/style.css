@@ -1,0 +1,388 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@font-face {
+    font-family:"KaushanScript";
+    src: url("../fonts/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf")
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+* {
+    box-sizing: border-box;
+}
+body {
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Playfair";
+    color: grey;
+    font-size: 1em;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header {
+    background-image: url("../img/fond.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+nav {
+    background-color: RGBA(220, 203, 238, 0.9);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "KaushanScript";
+}
+
+nav p {
+    margin : 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+#promo {
+    text-align: center;
+    background-color : rgba(220, 203, 238, .5);
+    color: white;
+    margin:0px;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: "KaushanScript";
+    text-shadow: grey 0.1em 0.1em 0.1em;
+    font-weight: lighter;
+    padding-bottom: 20%;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+h2 {
+    text-align: center;
+    color: grey;
+}
+
+#section1 {
+    padding: 20px;
+    clear:both;
+}
+
+#presentation, #presentadeux {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#presentation img {
+    float: left;
+    width: 10%;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+#presentadeux img {
+   float : right;
+   width: 10%;
+   margin-left: 20px;
+   padding-bottom: 20px;
+}
+
+
+#pratique {
+    margin-left : auto;
+    margin-right : auto;
+    background-image: url("../img/background_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    clear:both;
+}
+
+#pratique article {
+    width : 20%;
+    display : inline-block;
+    text-align : center;
+    margin-left : 5%;
+    margin-right : 5%;
+    clear:both;
+    vertical-align: center;
+    
+}
+
+#pratique img {
+    width: 50%;
+}
+
+hr {
+    color: rgba(192, 192, 192, 0.5);
+    width: 90%;
+    clear: both;
+    
+}
+
+#spacer {
+    clear:both;
+}
+
+iframe {
+    width : 100%;
+    height : 300px;
+}
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 125%;
+    color: white;
+    background-color: #8d6fd1;
+    margin-top: 2px;
+    padding : 5px 15% 5px 15%;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}
+
+/* Page Agenda */
+
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: black;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    background-color: white;
+    /* padding: 20px 0 20px 0;
+    margin-bottom: 20px;*/
+}
+
+tbody {
+    background-image : url("../img/background_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid lightgrey;
+}
+
+tbody td {
+    empty-cells: hide;
+    text-align: center;
+    padding: 5px;
+    border-spacing: 5px;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td a {
+    color: #c4a5de;
+}
+
+thead th {
+    background-color: #c4a5de;
+    color: white;
+    font-family: "KaushanScript";
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: lighter;
+    
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd){
+    background-color: #fafafa;
+}
+
+table td, table th {
+    padding : 10px;
+    border : solid 1px lightgrey;
+}
+
+/* FORMULAIRE */
+form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+legend {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#envoi {
+    background-color : #8b5bc1;
+    padding : 8px 20px 8px 20px;
+    color: white;
+    border: none;
+    font-size : 1.2em;
+    vertical-align : center;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom : 1px solid lightgrey;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom : 1px solid lightgrey;
+}
+
+input[type=radio] {
+    width : 10px;
+    margin-right: 20px;
+}
+
+input[type=checkbox] {
+    width : 10px;
+    margin-right: 10px;
+}
+
+select {
+    width : 95%;
+    height : 30px;
+    border: 1px solid grey;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+
+/* Formulaire de contact */
+
+
+#contact {
+    width: 60%;
+    margin-right:auto;
+    margin-left:auto;
+    float: left;
+}
+
+#contact:th-child(1), #contact:th-child(2) {
+    width : 100px;
+    text-align: center;
+}
+
+
+#contact textarea {
+    width : 700px;
+}
+
+#contact:nth-child(2) label {
+    vertical-align: top;
+}
+
+#contactaside {
+    float: right;
+    width: 20%;
+    background-color: white;
+    border: 1px solid grey;
+    margin-right: 5%;
+}
+
+#contactaside a {
+    font-size: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+
+/*Livre d'Or */
+
+
+
+#livre {
+    text-align: center;
+    margin: 20px;
+}
+
+#livre article {
+    display: inline-block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border : 1px solid grey; 
+    vertical-align: top;
+}
+
+#livre p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#livre img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid purple;
+}
+
+/* Album Photo */
+
+#photo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#photo img {
+    width: 15%;
+}
+
+#photo img:hover{
+    width: 30%;
+}

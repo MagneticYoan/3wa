@@ -1,0 +1,15 @@
+table {
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+td {
+    border : 1px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.same {
+    background-color: orange;
+}
