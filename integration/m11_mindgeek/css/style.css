@@ -1,0 +1,415 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+@font-face {
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+    font-family: "OpenSans"
+}
+
+@font-face {
+    src: url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+    font-family: "Candal", bold;
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "OpenSans";
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header img {
+    text-align: center;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+header {
+    background-color: #fcfcfc;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+nav li p {
+    margin-top: 0;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+nav a {
+    color: #fb8a9b;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+nav li:hover p {
+    color: #fb8a9b;
+}
+
+nav li:hover a {
+    color: #203e4d;
+}
+
+nav p {
+    color: #203e4d;
+    transition: 0.4s;
+}
+
+.thisPage {
+    padding: 1%;
+    background-color: rgba(251, 138, 155, 0.5);
+    border-radius: 25%;
+}
+
+.thisPage p, .thisPage a {
+    color: white;
+}
+
+.thisPage:hover p, .thisPage:hover a {
+    color: black;
+}
+
+
+#titre {
+    font-size: 2rem;
+    background-image: url("../img/background.jpg");
+    background-size: auto 100%;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#titre p {
+    margin: 0 10%;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main {
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: grey;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-family: "Candal";
+    margin: 0 10%;
+}
+
+h2 {
+    font-family: "Candal";
+    font-size: 1.8rem;
+    color: black;
+    border-top: 2px dotted grey;
+    border-left: 2px dotted grey;
+    border-right: 2px dotted grey;
+    margin-top: 15%;
+}
+
+h3 {
+    font-family: "Candal";
+    font-size: 1.2rem;
+    color: #fb8a9b;
+    font-weight: bolder;
+    margin: 0;
+}
+
+h4 {
+    color: darkgrey;
+    font-size: 1.5rem;
+    margin: 2% 0 2% 0;
+    background-color: #1e3e4b;
+    padding: 3%;
+    font-family: "Candal";
+    font-weight: bolder;
+}
+
+h6 {
+    background-color: #fb8a9b;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 2%;
+}
+
+#style h4 {
+    color: #fb8a9b;
+    font-size: 1.2rem;
+    margin: 2% 0 2% 0;
+    background-color: white;
+}
+
+#solution i, #style i {
+    color: #fb8a9b;
+    font-weight: bolder;
+}
+
+input[type=search] {
+    width: 100%;
+    background-color: #fb8a9b;
+    border: none;
+    padding: 5% 10%;
+    margin: 0;
+    height: 3rem;
+    color: white;
+}
+
+section article > p {
+    text-align: left;
+}
+
+main section:last-of-type {
+    margin-bottom: 20%;
+}
+
+main section {
+    display : flex;
+    flex-direction: column;
+}
+
+main ul {
+    text-align: left;
+    padding: 0 10%;
+}
+
+.serveur article p {
+    padding: 0 0 1% 5%;
+    margin: 2% 0;
+}
+
+.serveur article {
+    border : 2px dotted grey;
+    padding: 2%;
+    margin-bottom: 10%;
+    
+}
+
+.serveur, #contact, #solution, #style {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact article p {
+    text-align: center;
+    margin: 0;
+}
+
+#contact article i {
+    margin-top: 10%;
+}
+
+#contact i {
+    border-bottom: 1px #fb8a9b dashed;
+    width: 95%;
+    padding-bottom: 4%;
+    color: #fb8a9b;
+    font-size: 3rem;
+}
+
+#contact a {
+    color: #fb8a9b;
+}
+
+#map iframe {
+    width: 100%;
+    max-width: none;
+    margin-top: 5%;
+}
+
+.allArticles:hover > * {
+    opacity: 0.5;
+}
+
+.article1:hover, .article2:hover, .article3:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: "Candal";
+    font-weight: bolder;
+    margin: 5%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding : 1% 8% 5% 8%;
+    font-size: 0.8em;
+    color: white;
+    background-color: #1e3e4b;
+}
+
+footer p {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer img {
+    width: 12%;
+    float: none;
+}
+
+footer a {
+    color: lightgrey;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+    nav {
+        font-size: 2rem;
+    }
+    
+    header img {
+        margin-bottom: 10%;
+        width: 20%;
+    }
+    
+    nav li {
+    margin-left: 40%;
+    margin-right: 40%;
+    }
+    
+    footer li {
+        margin : 2% 0;
+    }
+    
+    footer img {
+        width: 7%;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        vertical-align: middle;
+        align-items: center;
+    }
+    
+    main section:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        margin-top: 5%;
+    }
+    
+    nav li {
+        font-size: 2rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .allArticles {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: baseline;
+        display: flex;
+        
+    }
+    
+    .allArticles article {
+        flex: 1 1 0px;
+        margin-left: 1%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .article1, .article2, .article3 {
+        margin: 0;
+        width: 30%;
+    }
+    
+    .serveur h2, #solution h2, #style h2, #contact h2 {
+        width: 100%;
+    }
+    
+    input[type=search] {
+        padding: 3% 10%;
+        font-size: 2rem;
+    }
+    
+    #contact article:nth-of-type(3) p:nth-of-type(2), #contact article:nth-of-type(3) p:nth-of-type(3) {
+        color: grey;
+    }
+    
+    #contact article:nth-of-type(3) p {
+        text-decoration: none;
+    }
+    
+    #contact article p {
+        text-decoration: underline;
+        
+    }
+    
+    #contact article p:first-of-type {
+        padding-top: 15%;
+    }
+    
+    #contact article a {
+        text-decoration: none;
+    }
+    
+    #contact {
+        color: black;
+    }
+    
+    footer ul {
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: middle;
+        align-items: center;
+    }
+    
+    footer li {
+        margin: 2%;
+    }
+    
+    footer img {
+        width: 4%;
+    }
+}

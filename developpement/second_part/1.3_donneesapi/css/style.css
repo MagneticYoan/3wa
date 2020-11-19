@@ -1,0 +1,44 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header {
+    background-color: aquamarine;
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+main #liste {
+    list-style-type: none;
+    background-color: aquamarine;
+    padding: 2%;
+    margin: 0;
+}
+
+main #thisStation {
+    padding: 0 ;
+    list-style-type: none;
+    text-align : center;
+    width: 100%;
+    margin: 2%;
+}
+
+.actif {
+    color: white;
+    text-shadow : 1px 1px 5px black;
+}
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+/* FOOTER */
+/* Ce qui concerne le footer */

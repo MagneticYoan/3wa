@@ -1,0 +1,132 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header img {
+    float : left;
+    width : 8%;
+}
+
+header {
+    color : #a49e9e;
+    font-weight : lighter;
+    font-style : italic ;
+}
+
+#smiley {
+    display: block;
+}
+
+#fullNav {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2cbcd6;
+    position: relative;
+}
+
+
+nav, nav ul {
+    color : white;
+    list-style : none
+}
+
+nav {
+    text-align : center;
+    width: 100%;
+    
+    
+}
+
+nav ul {
+    display: inline-block;
+    text-align: center;
+    margin : 20px;
+}
+
+#bouton_app, #bouton_free, #bouton_prod, #bouton_proj {
+   display : inline-block ; 
+    vertical-align: top; 
+} 
+
+
+#bouton_app:hover, #bouton_free:hover, #bouton_prod:hover, #bouton_proj:hover {
+    
+    left: auto;
+    z-index: 9999;
+}
+
+
+nav a {
+    color : white;
+    display: block;
+}
+
+nav li ul {
+    text-align : left;
+    left: -9999em;
+    margin-top: 0px;
+    padding-top : 10px;
+    
+} 
+
+nav li:hover ul {
+    left: auto;
+    z-index: 9999;
+} 
+
+
+.submenu, .submenu li {
+    display: block;
+    background-color: #2cbcd6;
+}
+
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+section {
+    max-width : 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
+    color : #a49e9e;
+}
+
+h2 {
+    color: #2cbcd6 ;
+    font-size : 2em;
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 125%;
+    color: white;
+    background-color: #2cbcd6;
+    margin-top: 2px;
+    padding : 5px 15% 5px 15%;
+
+}
+
+footer a {
+    color: #89deed;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}

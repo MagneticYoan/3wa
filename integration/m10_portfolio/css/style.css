@@ -1,0 +1,469 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image : url("../img/fond.png");
+    background-repeat: repeat;
+    max-width : 1100px;
+    font-size: 2rem;
+    color: grey;
+    clear: both;
+    
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 10% 5% 10%;
+}
+
+
+header img {
+    width: 7rem;
+    margin-top: 15%;
+    transition: 0.3s;
+}
+
+header img:hover {
+    width: 10rem;
+}
+
+h1 {
+    font-size: 2em;
+    margin : 1% auto 1% auto;
+    transition: 0.3s;
+}
+
+h1:hover {
+    color: #f62459;
+}
+
+nav li {
+    list-style-type : none;
+}
+
+
+
+nav li a {
+    color: grey;
+}
+
+nav li a:hover {
+    color: #f62459;
+    font-size: 3rem;
+    width: 150%;
+}
+
+nav ul {
+    padding: 0;
+}
+
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+h3 {
+    font-size: 3rem;
+    color: #f62459;
+    text-align: center;
+}
+
+
+    /* SECTION 1 */
+section:first-of-type {
+    background-image: url("../img/bg_header.png");
+    background-size: auto 100%;
+    padding: 5% 10% 5% 10%;
+    color: white;
+    text-align: center;
+}    
+
+#bienvenue a {
+    background-color: #f62459;
+    color: white;
+    padding: 4%;
+    border-radius: 10px;
+}
+
+#bienvenue p {
+    margin : 10% 0 10% 0;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-top: 35%;
+}
+
+
+    /* SECTION 2 */
+#competences {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}    
+
+h4 {
+    font-size: 2.5rem;
+}
+
+
+    /* SECTION 3 */
+#services {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10%;
+}
+
+h5 {
+    color: #f62459;
+}
+
+#icone {
+    background-color: rgba(211,211,211, 0.3);
+    border: 1px solid darkgrey;
+    color: grey;
+    display: inline;
+    border-radius: 50%;
+    padding : 5%;
+}
+
+    /* SECTION 4 */
+
+#realisations img {
+    width: 100%;
+}
+
+#realisations {
+    padding : 5% 10% 0 10%;
+}
+
+#realisations a {
+    color: #f62459;
+    padding-left: 5%;
+}
+
+#realisations a:hover {
+    background-color: #f62459;
+    color: white;
+    padding: 2% 2% 2% 5%;
+    border-radius: 5px;
+}
+
+    /* SECTION 5 */
+    
+#contact img {
+    width: 10%;
+}
+
+#contact p:first-of-type {
+    margin: 2% 10%;
+}
+
+.formItem {
+    border : 1px solid grey;
+    display: flex;
+    margin: 2%;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+.formItem > * {
+    margin : 3% 4% 3% 4%;
+}
+
+
+
+.formItem input {
+    background: none;
+    border: none;
+    width: 30%;
+}
+
+input[type=submit] {
+    color: white;
+    border: none;
+    background-color: grey;
+    padding : 4% 10%;
+    margin: 2%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin : 0 0 10% 0;
+    text-align: center;
+}
+
+input[type=submit]:first-of-type {
+   background-color: #f62459; 
+   text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 100%;
+    margin: 2% 5% 2% 5%;
+    padding : 1% 8% 1% 8%;
+    font-size: 0.8em;
+}
+
+footer img {
+    width: 15%;
+    float: none;
+}
+
+footer a {
+    color: #f62459;
+}
+
+
+/* MEDIA QUERIS */
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    
+    nav li {
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 8%;
+    }
+    
+    #services article > p {
+        padding-bottom: 5%;
+    }
+    
+    #services article > h5 {
+        padding-top : 2%;
+    }
+    
+    h3 {
+        border-bottom: 5px solid rgba(211,211,211, 0.5);
+        margin: 0 10% 5% 10%;
+        padding-bottom: 3%;
+    }
+    
+    input[type=submit] {
+        padding: 2% 5%;
+    }
+    
+    footer {
+        margin: 2% 3% 2% 3%;
+        padding : 1% 4% 1% 4%;
+    }
+    
+    footer img {
+        width: 10%;
+    }
+    
+    #realisations article:nth-child(even) img {
+        float: right;
+        width: 50%;
+        margin: 0 2% 2% 0;
+    }
+    
+    #realisations article:nth-child(odd) img {
+        float: left;
+        width: 50%;
+        margin: 0 2% 2% 0;
+    }
+    
+    #contact img {
+        width: 5rem;
+    }
+    
+    .formItem > * {
+        margin: 2%;
+        font-size: 2.5rem;
+    }
+    
+    .formItem:first-of-type, .formItem:nth-of-type(2) {
+        display: inline-flex;
+        width: 45%;
+        flex-direction: row;
+        align-items: stretch;
+        flex: 1;
+        margin: 2%;
+    }
+    
+    .formItem {
+        border : 4px solid rgba(211,211,211, 0.5);
+    }
+    
+    fieldset {
+        justify-content: space-between;
+        padding: 0 8% 0 8%;
+    }
+    
+    .formItem:last-of-type > * {
+        margin: 1%;
+    }
+    
+    #icone {
+    border: 3px solid darkgrey;
+    display: inline-flex;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header {
+        padding: 2%;
+    }
+    
+    header img, h1 {
+        display: inline-block;
+        vertical-align: text-top;
+        margin: 0;
+    }
+    
+    h1 {
+        padding-right: 20%;
+        padding-left: 5%;
+    }
+    
+    
+    nav {
+        display: inline-block;
+        padding-right: 10%;
+    }
+    
+    nav ul {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    
+    nav li {
+        margin: 0 8%;
+    }
+    
+    #services article > p {
+        padding-bottom: 5%;
+    }
+    
+    #services article > h5 {
+        padding-top : 2%;
+    }
+    
+    h3 {
+        border-bottom: 5px solid rgba(211,211,211, 0.5);
+        margin: 0 10% 5% 10%;
+        padding-bottom: 3%;
+    }
+    
+    input[type=submit] {
+        padding: 2% 5%;
+    }
+    
+    footer {
+        margin: 2% 3% 2% 3%;
+        padding : 1% 4% 1% 4%;
+    }
+    
+    footer img {
+        width: 5%;
+    }
+    
+    #realisations article:nth-child(even) img {
+        float: right;
+        width: 50%;
+        margin: 0 2% 2% 0;
+    }
+    
+    #realisations article:nth-child(odd) img {
+        float: left;
+        width: 50%;
+        margin: 0 2% 2% 0;
+    }
+    
+    #contact img {
+        width: 4rem;
+    }
+    
+    .formItem > * {
+        margin: 2%;
+        font-size: 2rem;
+    }
+    
+    .formItem:first-of-type, .formItem:nth-of-type(2) {
+        display: inline-flex;
+        width: 45%;
+        flex-direction: row;
+        align-items: stretch;
+        flex: 1;
+        margin: 2%;
+    }
+    
+    .formItem {
+        border : 2px solid rgba(211,211,211, 0.5);
+    }
+    
+    fieldset {
+        justify-content: space-between;
+        padding: 0 8% 0 8%;
+    }
+    
+    .formItem:last-of-type > * {
+        margin: 1%;
+    }
+    
+    #icone {
+    border: 3px solid darkgrey;
+    display: inline-flex;
+    }
+    
+    #icone:first-of-type:hover {
+        color: #f62459;
+        border : 3px solid #f62459;
+        animation: bounce 0.50s ease infinite;
+        -webkit-animation: bounce 0.50 ease infinite;
+        -moz-animation: bounce 0.50 ease infinite;
+         -ms-animation: bounce 0.50 ease infinite;
+          -o-animation: bounce 0.50 ease infinite;
+    }
+    
+    @keyframes bounce {
+     from {transform: translateY(0);}
+     to   {transform: translateY(-20px);}
+}
+    
+    
+    .articlesAlign {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #competences .articlesAlign article {
+        margin: 0 5%;
+    }
+    
+    #bienvenue {
+        margin-bottom: 5%;
+    }
+}

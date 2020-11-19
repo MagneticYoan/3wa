@@ -1,0 +1,89 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+nav, nav ul {
+    background-color : #2cbcd6;
+    color : white;
+    list-style : none
+}
+
+nav {
+    text-align : center;
+}
+
+nav li {
+    display : inline-block;
+}
+
+
+nav ul li {
+    display : inherit ; 
+    padding-right : 5%;
+    padding-left: 5%;
+    
+}
+
+nav a {
+    color : white;
+    display: block;
+}
+
+nav li ul {
+    position : absolute;
+    text-align : left;
+    left: -9999em;
+}
+
+nav li:hover ul {
+    left: auto;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+section {
+    max-width : 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
+    color : #a49e9e;
+}
+
+h2 {
+    color: #2cbcd6 ;
+    font-size : 2em;
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 125%;
+    color: white;
+    background-color: #2cbcd6;
+    margin-top: 2px;
+    padding : 5px 15% 5px 15%;
+
+}
+
+footer a {
+    color: #89deed;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}

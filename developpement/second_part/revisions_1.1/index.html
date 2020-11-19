@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+        
+        <style>
+            .blue {
+                color: blue;
+            }
+            
+            .red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="bonjour">Hallo</p>
+        <ul id="members">
+            <li>Komala</li>
+            <li>Blandine</li>
+            <li>Pierre</li>
+            <li>Serge</li>
+        </ul>
+        
+        <button id="clickhere">Click Here</button>
+        
+        <script>
+            
+            function onClick()
+            {
+                alert('bonjour');
+            }
+            
+            $("#contacts li").click( onClick );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+#photo-list {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#photo-list li {
+    list-style-type: none;
+}
+
+#photo-list img {
+    margin: 1em;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+
+#photo-list img:hover {
+    background-color: grey;
+}
+
+#photo-list .selected {
+    background-color: forestgreen;
+    
+}
+
+#photo-list .selected:hover {
+    background-color: lime;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */

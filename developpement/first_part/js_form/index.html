@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FORMULAIRE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Vendor -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<!-- CSS Perso -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	</head>
+	<body>
+		<!--HEADER-->
+		<header>
+			<h1>Formulaire</h1>
+			<p>de contact</p>
+		</header>
+		<!--MAIN CONTENT-->
+		<main>
+			<form method="POST" action="index.html">
+				<fieldset>
+					<legend>Coordonnées</legend>
+					<label>Nom</label>
+					<input type="text" id="name" name="user_name">
+					<label>Mail</label>
+					<input type="email" id="email" name="user_email">
+				</fieldset>
+				<fieldset>
+					<legend>Message</legend>
+					<label>Objet</label>
+					<input type="text" id="object" name="message_object">
+				</fieldset>
+				<fieldset>
+					<legend>Je souhaite être recontacter par</legend>
+					<div class="radiobutton">
+						<label>Téléphone</label>
+						<input type="radio" id="rappel" name="contact_by" value="telephone">
+						<label>Email</label>
+						<input type="radio" id="email" name="contact_by" value="email">
+						<label>Courrier</label>
+						<input type="radio" id="letter" name="contact_by" value="courrier">
+					</div>
+				</fieldset>
+				<div id="buttons">
+					<input type="submit" id="envoi">
+				</div>
+			</form>
+			<div id="stayinButtons">
+				<button class="hideForm" id="hideShowForm">Afficher/Cacher Form</button>
+				<button class="hideForm" id="hideShowResults">Afficher/Cacher Results</button>
+				<button class="hideForm" id="deletAll">Supprimer tous les éléments</button>
+				<button class="hideForm" id="deletSelected">Supprimez les éléments selectionnés</button>
+			</div>
+			
+			<table id="tableResult">
+				<thead>
+					<tr>
+						<td><h2>Select</h2></td>
+						<td><h2>Nom</h2></td>
+						<td><h2>Email</h2></td>
+						<td><h2>Objet</h2></td>
+						<td><h2>Contact par</h2></td>
+					</tr>
+				</thead>
+				<tbody id="results">
+					
+				</tbody>
+			</table>
+		</main>
+		 
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>

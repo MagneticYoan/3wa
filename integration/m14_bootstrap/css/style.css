@@ -1,0 +1,18 @@
+
+#nekoimages img {
+    width: 100%;
+}
+
+#index .liste {
+    margin : 5%;
+    padding: 5% 0;
+}
+
+footer {
+    margin: 5% 0;
+    line-height: 80%;
+}
+
+.sidemenu {
+    padding: 0;
+}

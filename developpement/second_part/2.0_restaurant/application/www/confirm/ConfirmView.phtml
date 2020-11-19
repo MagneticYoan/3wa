@@ -1,0 +1,32 @@
+<form action="<?=$requestUrl?>/Success" method="POST">
+<fieldset id="final_cart">
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                foreach($cart as $product) {
+                    echo '<tr><td>' . htmlspecialchars($product->name) . '</td>
+                    <td>' . htmlspecialchars($product->quantity) . '</td>
+                    <td>' . htmlspecialchars(floatval($product->price)) * htmlspecialchars(floatval($product->quantity)) . '</td></tr>';
+                }
+            ?>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td>Total</td>
+            <td>
+                <?php
+                    echo htmlspecialchars($total);
+                ?>
+            </td>
+        </tr>
+    </table>
+    <button type="submit" id="send_db">Pay</button>
+</fieldset>

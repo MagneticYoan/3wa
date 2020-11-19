@@ -1,0 +1,135 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header img {
+    float : left;
+    width : 8%;
+}
+
+header {
+    color : #a49e9e;
+    font-weight : lighter;
+    font-style : italic ;
+}
+
+#smiley {
+    display: block;
+}
+
+nav {
+    position: relative;
+
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding : 0;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    background-color: #2cbcd6;
+    color : white;
+    box-sizing: border-box;
+}
+
+/* ici, il te manque juste le display: inline - block*/
+
+/* .boutons:hover .submenu {
+    display: inline-block;
+} */
+
+/* je suis pas sur que ça soit le boutons que tu voulais mettre ici, peut être le ul? AHH, c'est peut-être ça x)*/
+
+.boutons {
+    text-align: center;
+}
+
+
+.boutons a:hover {
+    color: white;
+    background-color: #2cbcd6 ;
+    
+}
+
+.boutons a {
+    color : #2cbcd6;
+    padding : 20px;
+}
+
+.submenu {
+    background-color: #2cbcd6;
+    color : white;
+/*    display: none; */
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    width:100%;
+}
+
+.submenu a {
+    color : white;
+}
+
+.submenu a:hover {
+    color : #195f87;
+}
+
+/* SUBMENUS */
+
+#pro1 {
+    
+}
+
+
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+section {
+    max-width : 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
+    color : #a49e9e;
+}
+
+h2 {
+    color: #2cbcd6 ;
+    font-size : 2em;
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 125%;
+    color: white;
+    background-color: #2cbcd6;
+    margin-top: 2px;
+    padding : 5px 15% 5px 15%;
+
+}
+
+footer a {
+    color: #89deed;
+}
+
+footer img {
+    width: 3%;
+    float: none;
+}

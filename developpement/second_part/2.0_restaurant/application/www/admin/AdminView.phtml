@@ -1,0 +1,23 @@
+<section class="menu">
+    <a href="<?=$requestUrl ?>/admin?admin=boxes">Boxes Orders</a>
+    <a href="<?=$requestUrl ?>/admin?admin=orders">Customers Orders</a>
+    <a href="<?=$requestUrl ?>/admin?admin=box">Add a Box</a>
+</section>
+<section class="admin">
+    <?php
+        if($_GET['admin'] === 'boxes') {
+            echo 'Hello';
+        }
+        
+        if($_GET['admin']=== 'orders') {
+            echo 'yo';
+        }
+        
+        if($_GET['admin'] === 'box') {
+            echo 'Hola';
+        }
+    ?>
+    
+    
+    
+</section>

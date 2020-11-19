@@ -1,0 +1,333 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@font-face {
+    font-family: "Bodega";
+    src: url("../fonts/BodegaSans_Black.ttf");
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-image: url("../img/bg_body.svg");
+    background-repeat: repeat;
+    background-color: #434343;
+    color: white;
+}
+
+body p {
+    color: lightgrey;
+}
+
+.orange {
+    color: orange;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header {
+    background: linear-gradient(150deg, white 50%, #333333 50%); 
+    margin: 5%;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+}
+
+nav {
+    text-align: right;
+    padding: 5%;
+    font-family: "Bodega";
+}
+
+nav li {
+    list-style-type: none ;
+    padding: 5%;
+}
+
+nav a {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 8rem;
+    font-family: "Bodega";
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Bodega";
+}
+
+h3 {
+    color: orange;
+    font-family: "Bodega";
+}
+
+h2:last-of-type {
+    text-align: left;
+    padding: 0% 35% 0% 10%;
+}
+
+section {
+    margin: 8%;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    color: grey;
+    padding: 10% 5% 10% 5%;
+    margin: 8% 5% 8% 5%;
+    text-align: center;
+}
+
+article > a {
+    background-color: orange;
+    color: white;
+    padding: 5% 25% 5% 25%;
+    font-weight: lighter;
+    margin: 5% 0% 5% 0%;
+}
+
+a {
+    color: white;
+}
+
+hr {
+    border: 1px solid orange;
+    margin: 0% 7% 0% 7%;
+}
+
+article img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+#icones_sns {
+    font-size: 4rem;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: lighter;
+    max-width : 100%;
+    margin-top: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding : 1% 8% 1% 8%;
+    font-size: 0.8em;
+}
+
+footer p:last-of-type {
+    font-size: 0.9rem;
+    padding: 0% 10% 0% 10%;
+    line-height: 2rem;
+}
+
+
+footer li {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 15%;
+    float: none;
+}
+
+/* MEDIA QUERIS */
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    header {
+        display : flex;
+        background: linear-gradient(120deg, white 50%, #333333 50%); 
+    }
+    
+    nav {
+        padding: 0%;
+    }
+    
+    header img {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5%;
+    }
+
+    nav {
+        width: 160%;
+    }
+    
+    article > p {
+        margin-bottom : 10%;
+    }
+    
+    #icones_sns > p {
+        margin : 1%;
+        font-size: 150%;
+    }
+    
+    h2:last-of-type {
+        padding : 0% 10% 0% 3%;
+        letter-spacing : 0.1em;
+    }
+    
+    footer li {
+        padding: 0%;
+        margin-bottom: 5%;
+    }
+    
+    footer img {
+        width: 10%;
+    }
+    
+    footer p:last-of-type {
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    
+     header {
+        display : flex;
+        background: linear-gradient(120deg, white 50%, #333333 50%); 
+        width: 100%;
+        margin: 0;
+    }
+    
+    nav li {
+        padding: 1% 10% 0% 0%;
+    }
+    
+    nav {
+        padding: 0% 
+    }
+    
+    header img {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0% 0% 0% 10%;;
+    }
+
+    nav {
+        width: 160%;
+    }
+    
+    section:nth-of-type(2) {
+        margin: 0;
+    }
+    
+    section:nth-of-type(2) h2 {
+        padding-left: 10%;
+    }
+    
+    section:nth-of-type(2) article {
+        width: 20%;
+        display: inline-block;
+        padding: 2%;
+        margin: 1%;
+    }
+    
+    article > p {
+        margin-bottom : 10%;
+    }
+    
+    #icones_sns > p {
+        margin : 6%;
+        font-size: 120%;
+        width: 30%;
+        display: inline;
+        text-align: left;
+    }
+    
+    #icones_sns {
+        padding-right: 35%;
+    }
+    
+    video {
+        width : 50%;
+        float : right;
+    }
+    
+    #nousConnaitre {
+        float: left;
+        width: 50%;
+        padding-right : 5%;
+    }
+    
+    #nousConnaitre p {
+        text-align: left;
+    }
+    
+    
+    h2:last-of-type {
+        padding : 0% 10% 0% 3%;
+        letter-spacing : 0.1em;
+    }
+    
+    footer li {
+        padding: 0%;
+        margin-bottom: 5%;
+    }
+    
+    footer img {
+        width: 3%;
+    }
+    
+    footer ul {
+        margin : 0% 40% 0% 40%;
+    }
+    
+    footer p:last-of-type {
+        padding: 0 0 5% 0;
+    }
+    
+    footer {
+        padding : 6% 0 0 0;
+        margin: 0 ;
+        clear: both;
+    }
+    
+    footer p:nth-of-type(1) {
+        width: 100%;
+    }
+    
+    
+}

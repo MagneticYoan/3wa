@@ -1,0 +1,106 @@
+<form action="<?= $requestUrl ?>/Inscription" method="POST">
+    
+    <?php 
+    if(isset($errors)) { 
+        echo '<fieldset id="errorfield" class="errors"';
+        
+        foreach($errors as $error) 
+            {
+                echo '<p>' . $error . '</p>';
+            }
+        } 
+        
+        echo '</fieldset>'; ?>
+    </fieldset>
+    <fieldset>
+        <legend>Coordonates</legend>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname"/>
+        <div class="button_nop">X</div>
+        
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname"/>
+        <div class="button_nop">X</div>
+        
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday"/>
+        <div class="button_nop">X</div>
+        
+        <label for="adress">Adress</label>
+        <input type="text" id="adress" name="adress"/>
+        <div class="button_nop">X</div>
+        
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"/>
+        <div class="button_nop">X</div>
+        
+        <label for="zipcode">Zipcode</label>
+        <input type="text" id="zipcode" name="zipcode"/>
+        <div class="button_nop">X</div>
+        
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country"/>
+        <div class="button_nop">X</div>
+    </fieldset>
+    <fieldset>
+        <legend>Authentification</legend>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"/>
+        <div class="button_nop">X</div>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"/>
+        <div class="button_nop">X</div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Best Girls</legend>
+        <label for="bestgroup">Best group</label>
+        <select id="bestgroup" name="bestgroup">
+            <?php
+                foreach($groups as $group) {
+                    echo '<option value="' . htmlspecialchars($group['id']) . '">' . htmlspecialchars($group['name']) . '</option>';
+                }
+            ?>
+        </select>
+        <label for="bestus">Best μ's idol</label>
+        <select id="bestus" name="bestus">
+            <option value="null" select="selected">none</option>
+            <?php
+                foreach($idols as $idol) {
+                    if ($idol['group_id'] == 1) 
+                    {
+                        echo '<option value="' . htmlspecialchars($idol['id']) . '">' . htmlspecialchars($idol['firstname']) . ' ' . htmlspecialchars($idol['lastname']) . '</option>';
+                    }
+                }
+            ?>
+        </select>
+        <label for="bestaqours">Best Aqours idol</label>
+        <select id="bestaqours" name="bestaqours">
+            <option value="null" select="selected">none</option>
+            <?php
+                foreach($idols as $idol)
+                {
+                    if ($idol['group_id'] == 2)
+                    {
+                        echo '<option value="' . htmlspecialchars($idol['id']) . '">' . htmlspecialchars($idol['firstname']) . ' ' . htmlspecialchars($idol['lastname']) . '</option>';
+                    }
+                }
+            ?>
+        </select>
+        <label for="bestniji">Best Nijigasaki idol</label>
+        <select id="bestniji" name="bestniji">
+            <option value="null" select="selected">none</option>
+            <?php
+                foreach($idols as $idol)
+                {
+                    if ($idol['group_id'] == 3)
+                    {
+                        echo '<option value="' . htmlspecialchars($idol['id']) . '">' . htmlspecialchars($idol['firstname']) . ' ' . htmlspecialchars($idol['lastname']) . '</option>';
+                    }
+                }
+            ?>
+        </select>
+    </fieldset>
+    <button type="submit">Sign up</button>
+</form>

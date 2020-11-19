@@ -1,0 +1,19 @@
+<?php
+    if(!$_SESSION) {
+        echo '<form action="' . $requestUrl . '/Connection" method="POST">
+        <fieldset>
+            <legend>Authentification</legend>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"/>
+        </fieldset>
+        <button type="submit">Connect</button>
+        </form>';
+    }
+    
+    else {
+        echo '<p>' .$_SESSION['firstname'] . ', you have been successfully connected.</p>';
+    }
+    
+?>

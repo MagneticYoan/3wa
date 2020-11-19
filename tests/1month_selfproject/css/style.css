@@ -1,0 +1,321 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+* {
+	box-sizing: border-box;
+}
+
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header  {
+	background-color: orange;
+	text-align: center;
+}
+
+header ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	margin: 0 10%;
+	text-align: center;
+}
+
+header img {
+	width: 100%;
+	padding: 0 20%;
+	margin-top: 5%;
+	border-radius: 10px;
+	transition: 0.8s;
+}
+
+header img:hover {
+	transition: 0.8s;
+	transform : rotate(360deg);
+}
+
+header li:nth-of-type(2), header li:nth-of-type(3) {
+	background-color: rgba(255, 226, 188, 0.5);
+	margin: 0 20% 5% 20%;
+	border-radius: 20px
+}
+
+header li:nth-of-type(2) {
+	margin-top: 5%;
+}
+
+header a {
+	color: white;
+	font-weight: bolder;
+	text-shadow: black 1px 1px 5px
+}
+
+header a:hover {
+	color: black;
+	text-shadow: white 1px 1px 5px;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	padding: 10%;
+	color: white;
+	text-shadow: black 1px 1px 10px;
+}
+
+header div:last-of-type {
+	background-image: url('../img/FK_DE__DSC6071_191005.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+
+h2 {
+	border-left: 2px dashed grey;
+	border-top: 2px dashed grey;
+	border-right: 2px dashed grey;
+	padding-top: 1%;
+	margin-bottom: 5%;
+
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+section:first-of-type h2, section:nth-of-type(2) h2 {
+	width: 80%;
+}
+
+main {
+	max-width: 90%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 1.3rem;
+}
+
+#mainvideo iframe {
+	width: 100%;
+	height: auto;
+}
+
+main p {
+	color: darkgrey;
+}
+
+#otherVideo {
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 10%;
+}
+
+#otherVideo h4 {
+	border-bottom: 1px dashed darkgrey;
+	width: 112px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#datePassees {
+	margin-bottom: 15%;
+	font-size: 1.6rem;
+}
+
+#datePassees article p:nth-child(2n) {
+	margin-top: 2%;
+	margin-bottom: 0;
+}
+
+#datePassees article p:nth-child(2n +1) {
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+
+#datePassees article:first-of-type {
+	margin-top: 5%;
+}
+
+#slider img {
+	width: 100%;
+}
+
+#dots {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+	justify-content: center;
+	padding:0;
+	max-width: 100%;
+}
+
+#dots li {
+	padding: 3px;
+	margin: 1%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border: 1px solid orange;
+	background-size: 100%;
+}
+
+.date {
+	color: black;
+	font-weight: bolder;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+	background-color: orange;
+	font-size: 1rem;
+	text-align: center;
+	padding: 10% 2%;
+}
+
+h3 {
+	font-size: 1.4rem;
+	border-bottom: 2px dotted black;
+	margin: 0 30% 5% 30%;
+	padding-bottom: 3%;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 0 10%;
+	font-size: 3rem
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+	nav li {
+		font-size: 2rem;
+	}
+
+	header img {
+		width: 100%;
+		padding: 0 30%;
+		margin-bottom: 15%;
+	}
+
+	#mainvideo iframe {
+		height: 480px;
+	}
+
+	main section:last-of-type {
+		max-width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 10%
+	}
+
+	footer p {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 1025px) {
+	header li:nth-of-type(2), header li:nth-of-type(3) {
+		padding: 10% 20% 2% 20%;
+	}
+	section:first-of-type h2, section:nth-of-type(2) h2 {
+		width: 90%;
+	}
+
+	header ul {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin: 0 10%;
+		text-align: center;
+		align-items: end;
+	}
+
+	header img {
+		width: 60%;
+		padding: 0;
+		margin: 0;
+	}
+
+	header li:nth-of-type(2), header li:nth-of-type(3) {
+		background-color: rgba(255, 226, 188, 0);
+		margin: 0;
+		border-radius: 20px;
+		padding: 1%;
+		font-size: 3rem;
+	}
+
+	header li:nth-of-type(2) {
+		margin-top: 0;
+	}
+
+	#mainvideo iframe {
+		height: 480px;
+		width: 80%;
+	}
+
+	section {
+		margin-bottom: 5%
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+
+	#otherVideo {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 10%;
+		justify-content: space-around;
+		margin: 0 10%;
+		text-align: center;
+		align-items: end;
+		padding: 5%;
+		flex: 1 1 0px;
+	}
+
+	#otherVideo article {
+		padding: 4%;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#datePassees {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 10%;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: baseline;
+		flex: 1 1 0px;
+	}
+
+	#datePassees article {
+		padding: 3%;
+		min-width: 30%;
+	}
+
+	#slider img {
+		width: 60%;
+	}
+
+}

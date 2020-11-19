@@ -1,0 +1,36 @@
+<form class="cart">
+    <fieldset>
+        <section>
+            <select id="product_type" name="product_type">
+                <?php
+                    foreach($products as $product) {
+                        echo '<option value="' . $product['id'] .'">' . $product['name'] . '</option>'; 
+                    }
+                ?>
+            </select>
+        </section>
+        <section id="product_description">
+            
+        </section>
+        <button type="button" id="add_in_cart">Add in Cart</button>
+    </fieldset>
+</form>
+
+<form action="#" method="POST">
+    <fieldset id="cart">
+        <legend>Cart</legend>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </fieldset>
+    <button id="save_cart" type="button">Connect</button>
+</form>';

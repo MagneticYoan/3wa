@@ -1,0 +1,67 @@
+/* ******************************************************* */
+/* ************** Les éléments du caroussel ************** */
+/* ******************************************************* */
+
+/* Boite à outils */
+.project-toolbar {
+
+}
+
+/*
+*  Embarquer figure et .slider-navigation
+*  dans un élément en position relative : .slider-layout
+*    -> les éléments enfants seront en position absolute afin d'apparaître sur la photo :
+*
+*       1 - liens précédent et suivant (.next,.prev)
+*       2 - figcaption (.slider-legend )
+*
+*    -> la hauteur de .slider-layout sera donc celle des photos
+*/
+.slider-layout {
+  position : relative;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+#miniImageMenuListe {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#miniImageMenuListe > li {
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#miniImageMenuListe > li:hover {
+    background-color: blue;
+}
+
+#dots {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+	justify-content: center;
+	padding:0;
+	max-width: 100%;
+}
+
+#dots li {
+	padding: 3px;
+	margin: 1%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border: 1px solid orange;
+	background-size: 100%;
+}

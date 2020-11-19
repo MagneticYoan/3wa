@@ -1,0 +1,62 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main {
+    display: grid;
+    grid-template-columns : repeat(8, 1fr) ;
+	grid-template-rows : repeat(4, max(150px));
+	grid-gap : 10px;
+}
+
+#todayDate {
+    grid-column: 1;
+	grid-row: 1;
+	background-color: pink;
+}
+
+#timeNow {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: yellow;
+}
+
+#todayCitation {
+    grid-column: 9 / 3;
+    grid-row: 1;
+    background-color: lime;
+}
+
+#todayFood {
+    grid-column: 3 / 1;
+    grid-row: 4 / 2;
+    background-color: turquoise;
+}
+
+#todayChecklist {
+    grid-column: 9 / 7;
+    grid-row: 4 / 2;
+    background-color: orangered;
+}
+
+#habitTracker {
+    grid-column: 7 / 3;
+    grid-row: 5 / 2 ;
+    background-color: purple;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer*/

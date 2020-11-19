@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cup of Tea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Vendor -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<!-- CSS Perso -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	</head>
+	<body>
+		<!--HEADER-->
+		<header>
+			<div class="bannerTop">
+				<p id="livraison">Livraison offerte à partir de 65€ d'achat !</p>
+				<img src="img/ribbon.svg" alt="Elu Meilleur thé !" />
+			</div>
+			<div class="panier">
+				<p><span id="panierOut">Mon panier </span><i class="fa fa-shopping-cart"></i> 42,00€</p>
+				<img src="img/logo.png" alt="Logo de Cup of Tea"/>
+
+			</div>
+			<nav>
+				<ul>
+					<li><a href="listing.html">THES</a></li>
+					<li><a href = "product.html">GRANDS CRUS</a></li>
+					<li>ACCESSOIRES</li>
+					<li>EPICERIE</li>
+					<li><a href="about.html">NOTRE HISTOIRE</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--MAIN CONTENT-->
+		<main id="product">
+		    <section class="productPart1">
+		        <article>
+		            <h5>Blue of London</h5>
+		            <p class="darkTextProduct">Thé noir à la bergamote</p>
+		            <p>Ref : 133742</p>
+		        </article>
+		        <article>
+		            <p><i class="fa fa-star"></i>
+		            <i class="fa fa-star"></i>
+		            <i class="fa fa-star"></i>
+		            <i class="fa fa-star"></i>
+		            <span id="notAllStars"><i class="fa fa-star"></i></span></p>
+		            <p><a href="#">Voir les 56 avis clients</a></p>
+		        </article>
+		    </section>
+		    <section class="productPart2">
+		        <article>
+		            <img src="img/product/product3_big.jpg" alt="blue of london" />
+		        </article>
+		        <article>
+		            <!-- form -->
+		            <form action="/choose-size" method="post">
+		            	<fieldset>
+							<select id="size" name="size">
+							  <option value="100gx1">Pochette de 100g</option>
+							  <option value="500gx1">Pochette de 500g</option>
+							  <option value="500gx2">Deux pochettes de 500g</option>
+							</select>
+		            	</fieldset>
+		            </form>
+		            <p><span class="price">9,00€</span></p>
+		            <p><a href= "#">Ajoutez au panier</a></p>
+		            <p id="heart"><a href="#"><i class="fa fa-heart"></i> Ajoutez à ma liste d'envie</a></p>
+		        </article>
+		    </section>
+		    <section id="productPart3">
+		    	<article>
+			        <p>Blue of London est un Earl Grey d’exception qui associe un des meilleurs thés 
+			        noirs au monde, le Yunna, et une bergamote fraîche et délicate. Un mélange 
+			        remarquable d’équilibre et de finesse.</p>
+			        <p>Le Earl Grey est un grand classique anglais, depuis que Charles Grey, 
+			        compte (earl en anglais) de Falodon et Ministre des Affaires étrangères 
+			        du Royaume britannique au milieu du XIX ème siècle, reçut d’un mandarin 
+			        chinois une vieille recette consistant à aromatiser son thé avec de la bergamote</p>
+			        <p class="darkTextProduct">Profitez d’une remise de 5% sur la pochette de 500g (prix déjà remisé).</p>
+			        <p class="darkTextProduct">Profitez d’une remise de 10% sur le lot de 2 pochettes de 500g (prix déjà remisé).</p>
+		        </article>
+		    </section>
+			
+		</main>
+		<!--FOOTER-->
+		<footer>
+			<section class="navigation">
+				<ul>
+					<li><i class="fa fa-lock"></i><p>Paiement sécurisé</p></li>
+					<li><i class="fa fa-truck"></i><p>Ma livraison offerte</p></li>
+					<li><i class="fa fa-star"></i><p>Carte de fidelité</p></li>
+					<li><i class="fa fa-phone"></i><p>Service Client</p></li>
+					<li><i class="fa fa-check"></i><p>Garantie Qualité</p></li>
+				</ul>
+			</section>
+			<section class="menuslinks">
+				<ul>
+					<li>CUP OF TEA</li>
+					<li><a href="#">Notre histoire</a></li>
+					<li><a href="#">Nos boutiques</a></li>
+					<li><a href="#">Le Thé de A à Z</a></li>
+					<li><a href="#">Espace clients professionnels</a></li>
+					<li><a href="#">Recrutement</a></li>
+					<li><a href="#">Contactez-nous</a></li>
+					<li><a href="#">L'école du Thé</a></li>
+				</ul>
+				<ul>
+					<li>COMMANDEZ EN LIGNE</li>
+					<li><a href="#">Première visite</a></li>
+					<li><a href="#">Aide - FAQ</a></li>
+					<li><a href="#">Service Client</a></li>
+					<li><a href="#">Suivre ma commande</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Informations légales</a></li>
+				</ul>
+				<ul>
+					<li>SUIVEZ-NOUS !</li>
+					<li><a href="#">Notre histoire</a></li>
+					<li><a href="#">Nos boutiques</a></li>
+					<li><a href="#">Le Thé de A à Z</a></li>
+					<li><a href="#">Espace clients professionnels</a></li>
+				</ul>
+			</section>
+			<section class="3wa">
+				<img src='./img/3wa.jpg' alt="logo 3WA"/>
+	         	<p>Cet exercice de la <a href=https://3wa.fr/>3W Academy </a>est mis à disposition pour l'usage personnel des étudiants. 
+	         	<a href="https://3wa.fr/propriete-materiel-pedagogique/">Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International.</a></p>
+	        	<p>Les autorisations au-dela du champ de cette license peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. 
+	        	Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Miller</a>.</p>
+			</section>
+		</footer>
+	</body>
+</html>

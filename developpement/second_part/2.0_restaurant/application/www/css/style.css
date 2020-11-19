@@ -1,0 +1,159 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+header img {
+    width: 15%;
+}
+
+header {
+    background-color: #4dc4fb;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    
+}
+
+h1 {
+    margin: 0;
+    transition: 0.7s;
+}
+
+h1:hover {
+    text-shadow: 1px 1px 20px black;
+    transition: 0.7s;
+}
+
+header a {
+    color: white;
+}
+
+nav div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+body {
+    background-color: beige;
+    background-image : url('../images/bg2.png');
+    background-size: contain;
+}
+
+main {
+    margin: 10% 0;
+}
+
+table {
+    margin: 2% auto;
+    width: 80%;
+}
+
+tr {
+    text-align: center;
+}
+
+tr a {
+    color:black;
+}
+
+.Nijigasaki {
+    background-color: yellow;
+}
+
+.us {
+    background-color: #f58cb4;
+}
+
+.Aqours {
+    background-color: #8ce3f5;
+}
+
+.Saint {
+    background-color: #be8cf5;
+}
+
+form {
+    width: 70%;
+    margin : 0 auto;
+}
+
+fieldset {
+    background-color: white;
+    margin-top: 2%;
+}
+
+fieldset label {
+    display: block;
+}
+
+fieldset input, fieldset select {
+    width: 75%;
+    text-align: center;
+    margin: 0 0 3% 0;
+}
+
+.errors {
+    color: red;
+    display: block;
+    border: 2px solid red ;
+    margin-bottom: 5%;
+}
+
+button {
+    text-align: center;
+    margin: 5% auto;
+    width: 100%;
+}
+
+.check_icon {
+    font-size: 2rem;
+    color: navy;
+    height: 2rem;
+}
+
+.button_nop {
+    background-color: red;
+    color: white;
+    width: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display : none;
+}
+
+.button_check {
+    display: none;
+}
+
+p {
+    text-align: center;
+}
+
+#product_description img {
+    max-width: 100%;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+ footer {
+     background-color: #4dc4fb;
+     color: white;
+     padding: 2%;
+     text-align: center;
+ }
